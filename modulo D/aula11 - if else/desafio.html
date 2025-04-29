@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+  <body>
+    <h1>Identificador de nacionalidade</h1>
+    <p>Você nasceu em qual pais?</p>
+    <input type="text" id="pais" />
+    <button type="submit" onclick="nacionalidade()">ver</button>
+    <div id="res"></div>
+
+    <script>
+      function nacionalidade() {
+        var pais = document.querySelector("#pais").value;
+        var res = document.querySelector("#res");
+
+        res.innerHTML = `<p>Vivendo em ${pais}</p> </br>`;
+        if (pais == "Brasil") {
+          res.innerHTML += `Você é brasileiro!`;
+        } else {
+          res.innerHTML += `Você é estrangeiro!`;
+        }
+      }
+    </script>
+  </body>
+</html>
