@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de exercicio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Título</h1>
+    </header>
+    <section>
+      <div>
+        <label for="inicio">Inicio</label>
+        <input type="number" id="inicio" />
+
+        <label for="fim">Fim</label>
+        <input type="number" id="fim" />
+
+        <label for="passo">Passo</label>
+        <input type="number" id="passo" />
+
+        <input type="button" value="Contar" onclick="contar()">
+      </div>
+      <div>
+        <p>Contando:</p>
+        <p id="resultado"></p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
