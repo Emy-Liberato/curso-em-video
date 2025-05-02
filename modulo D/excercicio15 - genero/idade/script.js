@@ -13,7 +13,7 @@ function verificar() {
     var img = document.createElement("img"); // cria elemento html
     img.setAttribute("id", "foto"); // atribui um ID
 
-    // faz verificação de sexo e idade e atribui uma foto 
+    // faz verificação de sexo e idade e atribui uma foto
     if (fsex[0].checked) {
       genero = "Mulher";
       if (idade >= 0 && idade < 10) {
@@ -26,7 +26,7 @@ function verificar() {
         // adulta
         img.setAttribute("src", "adultamulher.png");
       } else {
-        // idosa 
+        // idosa
         img.setAttribute("src", "idosamulher.png");
       }
     } else if (fsex[1].checked) {
