@@ -27,6 +27,10 @@ function adicionar() {
 }
 
 function finalizar() {
+  if ((vetor.length == 0)) {
+    alert("Adicione valores antes de finalizar!");
+  }
+
   let maior = vetor[0];
   let menor = vetor[0];
   let soma = 0;
@@ -40,8 +44,8 @@ function finalizar() {
       maior = vetor[i];
     }
     if (vetor[i] < menor) {
-        menor = vetor[i];
-    };
+      menor = vetor[i];
+    }
   }
 
   media = soma / vetor.length;
@@ -50,7 +54,7 @@ function finalizar() {
   res.innerHTML = "";
   res.innerHTML += `Ao todo temos ${vetor.length} números cadastrados.<br>`;
   res.innerHTML += `O maior valor informado foi ${maior}.<br>`;
-  res.innerHTML += `O menor valor encontrado foi ${menor}.<br>`;
+  res.innerHTML += `O menor valor informado foi ${menor}.<br>`;
   res.innerHTML += `Somando todos os valores, temos ${soma}.<br>`;
   res.innerHTML += `A média dos valores digitados é ${media}.<br>`;
 }
